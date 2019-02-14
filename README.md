@@ -1,1 +1,1 @@
-# Python
+# CHECKIO about Python
