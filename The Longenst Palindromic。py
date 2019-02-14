@@ -1,0 +1,41 @@
+def longest_palindromic(text):
+    for size in reversed(range(len(text))):
+        for start in range(len(text) - size):
+            sample = text[start:][:size+1]
+            print(start,size)
+            print(sample)
+            if sample == sample[::-1]:
+                return sample
+
+
+
+
+longest_palindromic("text")
+'''
+[:][:]
+0 3 
+text
+0 2
+tex
+1 2
+ext
+0 1
+te
+1 1
+ex
+2 1
+xt
+0 0
+t
+---------------------------
+[:]
+0 3
+text
+0 2
+tex
+1 2
+ex
+0 1
+te
+1 1
+e
